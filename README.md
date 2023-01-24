@@ -1,2 +1,2 @@
 # html_css
-Meus projetos de HTML CSS
+Meu primeiro projeto de site (BARBEARIA ALURA)
