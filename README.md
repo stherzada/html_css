@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sthefany Sther</h1>
-<h3 align="center">A passionate frontend developer from Brasil</h3>
+<h3 align="center">A passionate frontend developer from Brazil</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=stherzada&label=Profile%20views&color=0e75b6&style=flat" alt="stherzada" /> </p>
 
