@@ -1,0 +1,97 @@
+header {
+	background: #BBBBBB;
+	padding: 20px 0; /* cima baixo */ /* define uma a distância entre o conteúdo de um elemento e suas bordas.  */
+}
+
+.caixa {
+	position: relative; /* posição relativa para que o menu de navegação entre na caixa  */
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li { 
+/* alterar a posição da lista de navegação */
+	display: inline;
+	margin: 0 0 0 15px; /* top direita baixo esquerda */
+}
+
+nav a { /* alterar toda a fonte  */
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos { /* posição relativa para que o menu de navegação entre na caixa  */
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0; /* espaçamento interno */
+}
+
+.produtos li { /* lados baixo&cima */
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px; /* colocar esse 20px quebra a conta, pois ela soma percentual + pixel*/
+	box-sizing: border-box; /* por isso usamos essa função para que o espaçamento lateral esteja DENTRO DO PERCENTUAL fazendo o 
+	width sempre seguido*/
+	/*border-color: #000000;
+	border-width: 2px;
+	border-style: solid;  um jeito de fazer bordas*/
+	border: 2px solid #000000;
+	border-radius: 10px;
+
+}
+
+.produtos li:hover { /*mouse está por cima*/ 
+	border-color:#C78C19;
+}
+
+.produtos li:active{ /* quando estiver clicado */ 
+	border-color:#088C19;
+}
+
+.produtos li:hover h2 { /* quando o mouse está por cima aumenta a fonte do titulo */
+	font-size: 34px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	/*margin:10px 0 0; é a mesma coisa que está abaixo*/ 
+	margin-top: 10px; 
+}
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright{
+	color:#FFFFFF;
+	font-size: 13px;
+	margin:20px 0 0;
+}
