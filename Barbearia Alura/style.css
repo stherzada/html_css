@@ -1,55 +1,156 @@
-body{
+header {
+	background: #BBBBBB;
+	padding: 20px 0; /* cima baixo */ /* define uma a distância entre o conteúdo de um elemento e suas bordas.  */
 }
 
-#banner{
-	width:100%;
+.caixa {
+	position: relative; /* posição relativa para que o menu de navegação entre na caixa  */
+	width: 940px;
+	margin: 0 auto;
 }
 
-.principal{
-	background:#CCCCCC;
-	padding: 30px;
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
 }
 
-.titulo-principal{
-	padding-left: 20px;
+nav li { 
+/* alterar a posição da lista de navegação */
+	display: inline;
+	margin: 0 0 0 15px; /* top direita baixo esquerda */
 }
 
-.titulo-centralizado{
-	text-align:center;
+nav a { /* alterar toda a fonte  */
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
 }
 
-p {
-	text-align:center;		
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
 }
 
-#missao{
-	font-size:20px;
+.produtos { /* posição relativa para que o menu de navegação entre na caixa  */
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0; /* espaçamento interno */
 }
 
-em strong{
-		color:#FF0000;
-}
-
-
-
-ul{
+.produtos li { /* lados baixo&cima */
 	display: inline-block;
-	vertical-align:top;
-	width:20%;
-	margin-right: 15%;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px; /* colocar esse 20px quebra a conta, pois ela soma percentual + pixel*/
+	box-sizing: border-box; /* por isso usamos essa função para que o espaçamento lateral esteja DENTRO DO PERCENTUAL fazendo o 
+	width sempre seguido*/
+	/*border-color: #000000;
+	border-width: 2px;
+	border-style: solid;  um jeito de fazer bordas*/
+	border: 2px solid #000000;
+	border-radius: 10px;
+
 }
-.itens{
 
-	font-style:italic;
+.produtos li:hover { /*mouse está por cima*/ 
+	border-color:#C78C19;
+}
+
+.produtos li:active{ /* quando estiver clicado */ 
+	border-color:#088C19;
+}
+
+.produtos li:hover h2 { /* quando o mouse está por cima aumenta a fonte do titulo */
+	font-size: 34px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	/*margin:10px 0 0; é a mesma coisa que está abaixo*/ 
+	margin-top: 10px; 
+}
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color:#FFFFFF;
+	font-size: 13px;
+	margin:20px 0 0;
+}
+
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+
+form{
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.imput-padrao{
+	display:block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0 ;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background:orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+	/* transform: rotate(70deg); */
 
 }
 
-.beneficios{
-	background: #FFFFFF;
-	padding: 20px;
-
+table{
+	margin: 20px 0 40px;
 }
-
-.imagembeneficios{
-	width:50%;
+thead{
+	background: #555555 ;
+	color:white;
+	font-weight: bold;
+}
+td, th{
+	border: 1px  solid #000000;
+	padding: 8px 15px;
 }

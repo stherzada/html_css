@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color:#000000;
+} 
+
+header{
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixadiv {
+	position: relative; /* posição relativa para que o menu de navegação entre na caixa  */
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	padding: 10px;
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li { 
+/* alterar a posição da lista de navegação */
+	display: inline;
+	margin: 0 0 0 15px; /* top direita baixo esquerda */
+}
+
+nav a { /* alterar toda a fonte  */
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+#banner{
+	width:100%;
+}
+
+.principal{
+	background:#CCCCCC;
+	padding: 30px;
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+
+
+p {
+	text-align:center;		
+}
+
+#missao{
+	font-size:20px;
+}
+
+em strong{
+		color:#FF0000;
+}
+
+
+
+.itens{
+	line-height: 32px;
+	list-style: none;
+	font-style:italic;
+}
+
+.titulo-centralizado{
+	letter-spacing: 4px;
+	text-align:center;
+} 
+
+.beneficios{
+	background: #FFFFFF;
+	padding: 20px;
+	vertical-align:top;
+	
+}
+
+.beneficios2{
+	
+	display:flex;
+	justify-content:space-around; /*ponto inicial superior esquerdo.*/
+	align-items: center;
+
+}
+.imagembeneficios{
+	width:30%;
+}
