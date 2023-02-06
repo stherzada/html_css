@@ -1,0 +1,72 @@
+/*.cabecalhoPrincipal-titulo{
+    /*display: inline-block;
+    vertical-align: middle;
+}
+
+.cabecalhoPrincipal-nav{
+    /*display: inline-block;
+    vertical-align: middle; centralizar o display. o float joga para lado porem o conteudo fica por cima
+    margin-left: 600px; 
+} */
+
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*espaço entre os elementos*/
+}
+.cabecalhoPrincipal-nav{
+    display: flex; /* quando não tem espaço dentro da caixa, o space between n funciona, ai colocar margin*/
+    
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    justify-content: space-around; /* espaço em volta dos elementos*/
+    align-items: center;
+    width: 70%;
+    margin-right: 5% ;
+}
+.rodapePrincipal-contatoForm{
+    width:20%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    flex-flow:  column wrap; /*atalho para n precisar escrever duas linhas*/
+    height: 260px;
+}
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n){
+    margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+    margin-left: 0;
+}
+
+/*----mobile-----*/
+.cabecalhoPrincipal-nav {
+    flex-direction:column;
+}
+
+  .cabecalhoPrincipal .container{
+    flex-direction: column;  
+    align-items: initial;
+    text-align: center;
+}
